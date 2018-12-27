@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/atom.css">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/open.css">
+		<title>幸运宝藏-chicony</title>
+	</head>
+	<body ontouchstart="" class="open-body">
+		<!-- <div class="title-text">幸运宝藏</div> -->
+		<div style="width: 100%;height: 100%;display: flex;">
+			<div class="wrapper" id="main">
+				<!-- 	<div class="open-has" style="display: inline-block;">
+					<h3 class="title-close"></h3>
+					<h3 class="title-open"></h3>
+					<div class="mod-chest">
+						<div class="chest-close show">
+							<div class="gift"></div>
+							<div class="tips">
+								1
+							</div>
+						</div>
+						<div class="chest-open ">
+							<div class="mod-chest-cont open-cont">
+								<div class="content">
+									<div class="gift">
+										500元*8个
+									</div>
+									<div class="func">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="config.js"></script>
+		<script>
+			let prizes = source.prizes
+			for (let i = 0; i < prizes.length; i++) {
+				let prize = prizes[i]
+				let e = '<div class="open-has" style="display: inline-block;">' +
+					'<h3 class="title-close"></h3>' +
+					'<h3 class="title-open"></h3>' +
+					'<div class="mod-chest">' +
+					'<div class="chest-close show">' +
+					'<div class="gift"></div>' +
+					'<div class="tips">' +
+					(i + 1) +
+					'</div>' +
+					'</div>' +
+					'<div class="chest-open ">' +
+					'<div class="mod-chest-cont open-cont">' +
+					'<div class="content">' +
+					'<div class="gift">' +
+					prize.text1 +
+					'<div style="padding-top:10px;">' +
+					prize.text2 +
+					'</div></div><div class="func"></div></div></div></div></div></div>'
+
+				$("#main").append(e)
+			}
+		</script>
+		<script type="text/javascript">
+			$(".chest-close").click(function() {
+				$(this).addClass("shake");
+				var that = this;
+				this.addEventListener("webkitAnimationEnd", function() {
+					$(that).closest(".open-has").addClass("opened");
+					setTimeout(function() {
+						$(that).removeClass("show");
+						$(that).closest(".mod-chest").find(".chest-open").addClass("show");
+						setTimeout(function() {
+							$(".chest-open").addClass("blur");
+						}, 500)
+					}, 200)
+				}, false);
+			})
+		</script>
+	</body>
+</html>
