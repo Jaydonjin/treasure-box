@@ -5,7 +5,7 @@
 	display: flex;
 	flex-wrap: wrap-reverse;
 	justify-content: center;
-	/* align-items: center; */
+	align-items: center;
   align-content: center
 }
 
@@ -36,6 +36,8 @@
 	height: 200px;
 	width: 25%;
 	/* margin: 0px auto; */
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .open-has .title-close {
@@ -80,14 +82,16 @@
 .mod-chest .chest-close .tips {
 	width: 166px;
 	height: 60px;
-	color: #EFEFF4;
+	color: #ec902f;
 	font-size: 35px;
 	text-align: center;
 	/* background: url(../img/txt-tips-open.png) 0px 0px no-repeat; */
 	background-size: 190px auto;
 	position: absolute;
-	left: 70px;
-	top: 145px;
+	left: 60px;
+	top: 220px;
+  font-family: cursive;
+  font-weight: bold;
 	-webkit-transition: all .5s;
 }
 
@@ -107,8 +111,8 @@
 	width: 320px;
 	height: 300px;
 	position: absolute;
-	top: -100px;
-	left: -61px;
+/* 	top: -100px;
+	left: -610px; */
 	content: "";
 	display: block;
 }
@@ -153,7 +157,7 @@
 
 /*.open-has.opened .mod-chest{-webkit-transform:translate(0px,150px);}*/
 .open-has.opened .mod-chest .chest-open {
-	-webkit-transform: translate(0px, 50px);
+	/* -webkit-transform: translate(0px, 50px); */
 }
 
 .open-has .mod-chest-cont {
@@ -174,11 +178,13 @@
 }
 
 .open-has .mod-chest-cont .gift {
-	color: #000000;
-	font-size: 30px;
+	color: #FFFFFF;
+	font-size: 35px;
 	line-height: 30px;
 	padding-bottom: 30px;
 	height: 60px;
+  font-family: cursive;
+  font-weight: bold;
 }
 
 .open-has .mod-chest-cont .gift .icon {
