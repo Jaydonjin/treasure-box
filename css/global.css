@@ -197,7 +197,7 @@ input[type="text"] {
 	height: 240px;
 	background: url(../img/chest4-open.png) no-repeat center center;
 	opacity: 0;
-  background-size: 90% auto;
+  background-size: 100% auto;
 	position: relative;
 	z-index: 1;
 	position: absolute;
