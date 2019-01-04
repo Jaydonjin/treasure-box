@@ -14,9 +14,8 @@
 	</head>
 	<body class="open-body">
 		<!-- <div class="title-text">幸运宝藏</div> -->
-		<div style="width: 100%;height: 100%;display: flex;">
-			<div class="wrapper" id="main">
-				<!-- 	<div class="open-has" style="display: inline-block;">
+		<div class="wrapper" id="main">
+			<!-- 	<div class="open-has" style="display: inline-block;">
 					<h3 class="title-close"></h3>
 					<h3 class="title-open"></h3>
 					<div class="mod-chest">
@@ -39,7 +38,6 @@
 						</div>
 					</div>
 				</div> -->
-			</div>
 		</div>
 		<script type="text/javascript" src="js/zepto.min.js"></script>
 		<script type="text/javascript" src="config.js"></script>
@@ -47,9 +45,8 @@
 			let prizes = source.prizes
 			for (let i = 0; i < prizes.length; i++) {
 				let prize = prizes[i]
-				let e = '<div class="open-has" style="display: inline-block;">' +
-					'<h3 class="title-close"></h3>' +
-					'<h3 class="title-open"></h3>' +
+				let e = '<div class="open-has">' +
+
 					'<div class="mod-chest">' +
 					'<div class="chest-close show">' +
 					'<div class="gift"></div>' +
@@ -65,7 +62,7 @@
 					'<div style="padding-top:10px;">' +
 					prize.text2 +
 					'</div></div><div class="func"></div></div></div></div></div></div>'
-
+				// let e ='<div style="width:25%;height:300px;background-color: #000000">qweqweqweqweqweqw</div>'
 				$("#main").append(e)
 			}
 		</script>

@@ -149,7 +149,7 @@ input[type="text"] {
 	bottom: 80px;
 	left: 0px;
 	content: "";
-	background: #fff;
+	background: #ebdf99;
 	border-left: #e59c00 1px solid;
 	border-right: #e59c00 1px solid;
 	box-sizing: border-box;
@@ -192,7 +192,6 @@ input[type="text"] {
 	left: 0;
 	top: 0px;
 }
-
 .mod-chest .chest-open {
 	width: 320px;
 	height: 150px;
