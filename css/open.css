@@ -5,7 +5,8 @@
 	display: flex;
 	flex-wrap: wrap-reverse;
 	justify-content: center;
-	align-items: center
+	/* align-items: center; */
+  align-content: center
 }
 
 .open-body {
@@ -34,7 +35,7 @@
 	z-index: 2;
 	height: 200px;
 	width: 25%;
-	margin: 0px auto;
+	/* margin: 0px auto; */
 }
 
 .open-has .title-close {
@@ -129,10 +130,9 @@
 .mod-chest .chest-open {}
 
 .mod-chest .chest-open.blur:after {
-	width: 320px;
-	height: 68px;
-	background: url(../img/chest-open-blur.png) no-repeat 0px 0px;
-	background-size: 320px auto;
+	width: 245px;
+	height: 160px;
+	background: url(../img/chest2.png) no-repeat -260px -750px;
 	position: relative;
 	z-index: 1;
 	position: absolute;
@@ -157,7 +157,7 @@
 }
 
 .open-has .mod-chest-cont {
-	padding: 30px 0px 50px;
+	padding: 15px 0px 25px;
 	text-align: center;
 	overflow: hidden;
 	opacity: 0;

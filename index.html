@@ -51,10 +51,10 @@
 					'<div class="chest-close show">' +
 					'<div class="gift"></div>' +
 					'<div class="tips">' +
-					(i + 1) +
+					// (i + 1) +
 					'</div>' +
 					'</div>' +
-					'<div class="chest-open ">' +
+					'<div class="chest-open">' +
 					'<div class="mod-chest-cont open-cont">' +
 					'<div class="content">' +
 					'<div class="gift">' +
@@ -75,9 +75,9 @@
 					setTimeout(function() {
 						$(that).removeClass("show");
 						$(that).closest(".mod-chest").find(".chest-open").addClass("show");
-						setTimeout(function() {
-							$(".chest-open").addClass("blur");
-						}, 500)
+// 						setTimeout(function() {
+// 							$(".chest-open").addClass("blur");
+// 						}, 500)
 					}, 200)
 				}, false);
 			})
