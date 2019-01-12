@@ -37,7 +37,7 @@
 	width: 25%;
 	/* margin: 0px auto; */
   padding-bottom: 50px;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .open-has .title-close {
@@ -80,15 +80,15 @@
 .open-has .title-close .user {}
 
 .mod-chest .chest-close .tips {
-	width: 166px;
+	width: 250px;
 	height: 60px;
 	color: #ffffff;
-	font-size: 35px;
+	font-size: 50px;
 	text-align: center;
 	/* background: url(../img/txt-tips-open.png) 0px 0px no-repeat; */
 	background-size: 190px auto;
 	position: absolute;
-	left: 60px;
+	left: 20px;
 	top: 220px;
   font-family: cursive;
   font-weight: bold;
@@ -179,9 +179,9 @@
 
 .open-has .mod-chest-cont .gift {
 	color: #FFFFFF;
-	font-size: 35px;
+	font-size: 50px;
 	line-height: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 48px;
 	height: 60px;
   font-family: cursive;
   font-weight: bold;
